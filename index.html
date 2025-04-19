@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satvik Jogadand | Insurance Professional</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --glossy-bg: rgba(240, 240, 240, 0.6);
+        --frosted: blur(10px);
+        --text-glow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        --primary-color: #0a84ff;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(145deg, #e5e5e5, #ffffff);
+        color: #1a1a1a;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--glossy-bg);
+        backdrop-filter: var(--frosted);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+        z-index: 999;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      nav h1 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1a1a1a;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary-color);
+      }
+
+      header {
+        padding-top: 100px;
+        text-align: center;
+      }
+
+      .profile-container {
+        margin: 40px auto 20px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .profile-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: var(--text-glow);
+      }
+
+      .tagline {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 40px;
+      }
+
+      section {
+        padding: 80px 24px;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        background: linear-gradient(90deg, #007aff, #0a84ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        line-height: 1.7;
+        font-size: 18px;
+        color: #333;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 768px) {
+        nav {
+          padding: 12px 20px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .profile-container {
+          width: 140px;
+          height: 140px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .tagline {
+          font-size: 18px;
+        }
+
+        .section-title {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Satvik Jogadand</h1>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="profile-container">
+        <img src="your-photo.jpg" alt="Satvik Jogadand" />
+      </div>
+      <h1>Satvik Jogadand</h1>
+      <p class="tagline">Insurance & Risk Management Professional</p>
+    </header>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <p>
+        PGDM in Insurance & Risk Management. IRM Level 1 Certified. Passionate about building secure, informed futures through expertise in health, life, and general insurance.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p>
+        Currently a PPO-holder at Bajaj Allianz. Former experience at UltraTech Cement and The Climate Reality Project.
+        Skilled in risk analysis, customer engagement, and portfolio strategy.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        Email: satvik@example.com<br />
+        LinkedIn: <a href="#">linkedin.com/in/satvik</a>
+      </p>
+    </section>
+  </body>
+</html>
